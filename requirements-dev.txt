@@ -1,0 +1,13 @@
+-r requirements.txt
+
+# Packaging.
+#
+# 5.13.2 is the last of the 5.x line.  Its bootloader declares a minimum OS
+# version of 5.2 and references no Windows 8+ APIs, which is why bundles built
+# with it still start on Windows 7 even though the documentation only claims
+# "Windows 8 and newer" - that sentence is about where PyInstaller runs, not
+# about what it produces.
+#
+# After changing this pin, run:
+#     tools/check_win7_compat.py
+pyinstaller==5.13.2

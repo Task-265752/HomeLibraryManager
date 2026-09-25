@@ -1,0 +1,7 @@
+# Runtime dependency.
+#
+# PySide2 5.15.2.1 is the *last* release of the Qt 5 binding, and Qt 5.15 is the
+# last Qt that supports Windows 7.  Qt 6 / PySide6 requires Windows 10, so this
+# pin is not a preference - it is what makes the Windows 7 requirement possible.
+# Moving off it means dropping Windows 7 support.
+PySide2==5.15.2.1
